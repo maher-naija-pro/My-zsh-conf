@@ -8,9 +8,15 @@ fi
 #change cusror form
 echo '\e[5 q'
 
+if [ -z "$TMUX"  ]; then
+        ┆ exec tmux new-session -A -s workspace
+fi
+
+
+
 #creeast screnn to keep track context
 #screen -D -R -S main
-tmux  set -g status off \; set -g mouse on\; set-option -g  history-limit 10000 \;   new-session -A -s main
+
 
 HISTSIZE=5000000
 SAVEHIST=1000000
