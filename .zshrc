@@ -1,6 +1,8 @@
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
+
+
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
@@ -8,18 +10,16 @@ fi
 #change cusror form
 echo '\e[5 q'
 
-if [ -z "$TMUX"  ]; then
-        ┆ exec tmux new-session -A -s workspace
-fi
-
-
-
 #creeast screnn to keep track context
 #screen -D -R -S main
 
+if [ -z "$TMUX"  ]; then
+          exec tmux new-session -A -s workspace
+fi
 
-HISTSIZE=5000000
-SAVEHIST=1000000
+
+HISTSIZE=500000000
+SAVEHIST=500000000
 setopt HIST_IGNORE_ALL_DUPS EXTENDED_HISTORY APPEND_HISTORY
 
 ZSH_AUTOSUGGEST_CLEAR_WIDGETS+=(buffer-empty bracketed-paste accept-line push-line-or-edit)
@@ -68,7 +68,7 @@ DISABLE_UPDATE_PROMPT="true"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="false"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # Caution: this setting can cause issues with multiline prompts (zsh 5.7.1 and newer seem to work)
@@ -329,17 +329,6 @@ alias prd="awsprod && tfprod &&  cd  ~/aws-prod/recipes"
 alias prod="awsprod && tfprod && cd  ~/aws-prod/recipes"
 alias dev="awsdev && tfdev && cd  ~/aws-dev/recipes"
 
-alias sdata="cd  ~/secrets-data/recipes"
-alias sprd="cd  ~/secrets-prod/recipes"
-alias sprod="cd  ~/secrets-prod/recipes"
-alias sdev="cd  ~/secrets-dev/recipes"
-
-alias oqa1="cd  ~/opencell-terraform-qa1/recipes"
-alias oqa2="cd  ~/opencell-terraform-qa2/recipes"
-alias odev1="cd  ~/opencell-terraform-dev1/recipes"
-alias oin1="cd  ~/opencell-terraform-in1/recipes"
-alias osal="cd  ~/opencell-salt-v2/state"
-
 gitback() {
   git -C $1 add . 
   git -C $1 commit -m upd 
@@ -348,8 +337,50 @@ gitback() {
 }
 alias gback='gitback'
 
-alias bzsh="cp ~/.zshrc ~/backup_zsh_config  &&  cd ~/backup_zsh_config && gback ~/backup_zsh_config && rel"
-alias bvimrc="cp ~/.vimrc ~/backup_vimrc  &&gback ~/backup_vimrc"
+
+
+gitpull() {
+        git  -C $1 pull >> /dev/null 
+}
+alias gpull='gitpull'
+
+alias pzsh="gpull ~/My-zsh-conf"
+alias pvim="gpull ~/My-VimRC"
+alias ptmux="gpull ~/tmux_conf"
+alias phist="gpull ~/My-zsh-history"
+alias pgit="gpull ~/My-Git-Config"
+alias pssh="gpull ~/My_ssh"
+alias paws="gpull ~/My-aws-cli"
+alias pco="gpull ~/All-my-configs"
+
+alias pall="pco && paws && pssh && pgit && pzsh && pvim && ptmux && phist"
+
+
+alias bzsh="gback ~/My-zsh-conf"
+alias bvim="gback ~/My-VimRC"
+alias btmux="gback ~/tmux_conf"
+alias bhist="gback ~/My-zsh-history"
+alias bgit="gback ~/My-Git-Config"
+alias bssh="gback ~/My_ssh"
+alias baws="gback ~/My-aws-cli"
+alias bco="gback ~/All-my-configs"
+
+
+alias ball="bco && baws && bssh && bgit && bzsh && bvim && btmux && bhist"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 alias bbrew="cd ~/backup_brew_install && gback ~/backup_brew_install"
 alias biterm="cd ~/backup_iterm_config && gback ~/backup_iterm_config"
 
@@ -420,8 +451,6 @@ alias clear="clear && reset"
 alias reset="clear && reset"
 alias res="clear && reset"
 alias clear="clear && reset"
-alias psql="docker run -it --rm jbergknoff/postgresql-client"
-alias do ="docker"
 
 # aws config 
 alias awsdev="sed -i  -e   's/^\([^#].*\)/#&/' ~/.aws/credentials &&  sed -i  -e   '2,4s/^#//' ~/.aws/credentials"
@@ -429,15 +458,19 @@ alias awsprod="sed -i  -e   's/^\([^#].*\)/#&/' ~/.aws/credentials &&  sed -i  -
 alias awsdata="sed -i  -e   's/^\([^#].*\)/#&/' ~/.aws/credentials &&  sed -i  -e   '12,14s/^#//' ~/.aws/credentials"
 
 alias ci="vi .circleci/config.yml"
-alias awsc="vi ~/.aws/credentials"
-alias vimc="vi ~/.vimrc"
 alias vimrc="vi ~/.vimrc"
 alias zsh="vi ~/.zshrc"
 alias snipc="cd ~/.vim/plugged/vim-snippets/UltiSnips/"
 alias bsnip="cd ~/.vim/plugged/vim-snippets/UltiSnips/"
 
+alias allc="vi All-my-configs/conf.sh"
 alias sshc="vi ~/.ssh/config"
 alias awsc="vi ~/.aws/credentials"
+alias tmuxc="vi ~/.tmux.conf"
+alias vic="vi ~/.vimrc"
+alias gitc="vi ~/.gitconfig"
+alias tzshc="vi ~/.p10k.zsh"
+
 alias monip="curl -s ifconfig.me"
 alias ouip="whois $(monip) | grep country"
 alias cpr="cp -r "
@@ -453,9 +486,7 @@ alias ls="ls -a"
 alias net="ping 8.8.8.8"
 alias rel="source ~/.zshrc"
 alias sshr="ssh-keygen -R"
-alias backup_vimrc="cp ~/.vimrc ~/backup_vimrc"
 alias backup_mac="export MACPREFS_BACKUP_DIR=~/backup_mac_pref && sudo macprefs backup"
-alias backup_zsh=" cp .zcompdump-MacBook\ Pro\ de\ maher-5.8  ~/backup_zsh_config  && cp .zprofile ~/backup_zsh_config && sudo cp -r ~/.oh-my-zsh ~/backup_zsh_config && cp ~/.zsh_history ~/backup_zsh_config && cp ~/.zshrc ~/backup_zsh_config"
 alias vi="vim +startinsert"
 alias v="vim +startinsert"
 
@@ -485,7 +516,6 @@ klp_fn() {
 
 alias klp='klp_fn'
 
-alias you='cd ~/youree-terrafrom-ml/recipes'
 
 upl_fnc() {
 aws lambda update-function-code\
@@ -495,12 +525,19 @@ aws lambda update-function-code\
 }
 alias ul='upl_fnc'
 
+
+
+
+
 autoload -U up-line-or-beginning-search
 autoload -U down-line-or-beginning-search
 zle -N up-line-or-beginning-search
 zle -N down-line-or-beginning-search
 bindkey "^[[A" up-line-or-beginning-search # Up
 bindkey "^[[B" down-line-or-beginning-search # Down
+
+
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 compdef __start_kubectl k
@@ -523,4 +560,8 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+
+# pullall conf 
+echo "pull all git conf repo"
+pall 
 
