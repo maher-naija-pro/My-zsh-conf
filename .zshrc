@@ -346,7 +346,7 @@ alias gpull='gitpull'
 
 alias pzsh="gpull ~/My-zsh-conf"
 alias pvim="gpull ~/My-VimRC"
-alias ptmux="gpull ~/tmux_conf"
+alias ptmux="gpull ~/My_tmux_conf"
 alias phist="gpull ~/My-zsh-history"
 alias pgit="gpull ~/My-Git-Config"
 alias pssh="gpull ~/My_ssh"
@@ -358,7 +358,7 @@ alias pall="pco && paws && pssh && pgit && pzsh && pvim && ptmux && phist"
 
 alias bzsh="gback ~/My-zsh-conf"
 alias bvim="gback ~/My-VimRC"
-alias btmux="gback ~/tmux_conf"
+alias btmux="gback ~/My_tmux_conf"
 alias bhist="gback ~/My-zsh-history"
 alias bgit="gback ~/My-Git-Config"
 alias bssh="gback ~/My_ssh"
