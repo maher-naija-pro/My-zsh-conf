@@ -353,7 +353,7 @@ alias pssh="gpull ~/My_ssh"
 alias paws="gpull ~/My-aws-cli"
 alias pac="gpull ~/All-my-configs"
 
-alias pall="pac && paws && pssh && pgit && pzsh && pvim && ptmux && phist"
+alias pall="pac && pgit && pzsh && pvim && ptmux && phist"
 
 
 alias bzsh="gback ~/My-zsh-conf"
@@ -366,7 +366,7 @@ alias baws="gback ~/My-aws-cli"
 alias bac="gback ~/All-my-configs"
 
 
-alias ball="bac  && baws && bssh && bgit && bzsh && bvim && btmux && bhist"
+alias ball="bac  && bgit && bzsh && bvim && btmux && bhist"
 
 
 
