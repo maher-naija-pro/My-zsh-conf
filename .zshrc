@@ -14,7 +14,7 @@ echo '\e[5 q'
 #screen -D -R -S main
 
 if [ -z "$TMUX"  ]; then
-        tmux new-session -A -s workspace
+         tmux new-session -A -s workspace
 fi
 
 
@@ -340,7 +340,7 @@ alias gback='gitback'
 
 
 gitpull() {
-        git  -C $1 pull &> /dev/null& 
+        nohup git  -C $1 pull &> /dev/null   git  -C $1 pull &> /dev/null && 
 }
 alias gpull='gitpull'
 
