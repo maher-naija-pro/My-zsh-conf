@@ -554,6 +554,6 @@ unset __conda_setup
 
 
 # pullall conf 
-gpll
+pall 
 echo "pull all git conf repo"
 
