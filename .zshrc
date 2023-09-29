@@ -14,7 +14,7 @@ echo '\e[5 q'
 #screen -D -R -S main
 
 if [ -z "$TMUX"  ]; then
-          exec tmux new-session -A -s workspace
+        tmux new-session -A -s workspace
 fi
 
 
@@ -561,6 +561,8 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+
 # pullall conf 
+gpll
 echo "pull all git conf repo"
 
