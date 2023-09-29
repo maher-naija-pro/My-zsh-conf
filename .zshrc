@@ -377,6 +377,7 @@ alias biterm="cd ~/backup_iterm_config && gback ~/backup_iterm_config"
 
 
 alias k="kubectl"
+alias e="exit"
 
 #kuberantes
 alias kdns="kubectl describe ns"
