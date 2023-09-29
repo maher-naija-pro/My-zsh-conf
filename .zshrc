@@ -351,9 +351,9 @@ alias phist="gpull ~/My-zsh-history"
 alias pgit="gpull ~/My-Git-Config"
 alias pssh="gpull ~/My_ssh"
 alias paws="gpull ~/My-aws-cli"
-alias pco="gpull ~/All-my-configs"
+alias pac="gpull ~/All-my-configs"
 
-alias pall="pco && paws && pssh && pgit && pzsh && pvim && ptmux && phist"
+alias pall="pac && paws && pssh && pgit && pzsh && pvim && ptmux && phist"
 
 
 alias bzsh="gback ~/My-zsh-conf"
@@ -363,10 +363,10 @@ alias bhist="gback ~/My-zsh-history"
 alias bgit="gback ~/My-Git-Config"
 alias bssh="gback ~/My_ssh"
 alias baws="gback ~/My-aws-cli"
-alias bco="gback ~/All-my-configs"
+alias bac="gback ~/All-my-configs"
 
 
-alias ball="bco && baws && bssh && bgit && bzsh && bvim && btmux && bhist"
+alias ball="bac  && baws && bssh && bgit && bzsh && bvim && btmux && bhist"
 
 
 
