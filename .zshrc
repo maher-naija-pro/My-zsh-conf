@@ -369,18 +369,6 @@ alias bac="gback ~/All-my-configs"
 alias ball="bac  && bgit && bzsh && bvim && btmux && bhist"
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 alias bbrew="cd ~/backup_brew_install && gback ~/backup_brew_install"
 alias biterm="cd ~/backup_iterm_config && gback ~/backup_iterm_config"
 
@@ -463,7 +451,7 @@ alias zsh="vi ~/.zshrc"
 alias snipc="cd ~/.vim/plugged/vim-snippets/UltiSnips/"
 alias bsnip="cd ~/.vim/plugged/vim-snippets/UltiSnips/"
 
-alias allc="vi All-my-configs/conf.sh"
+alias allc="vi ~/All-my-configs/conf.sh"
 alias sshc="vi ~/.ssh/config"
 alias awsc="vi ~/.aws/credentials"
 alias tmuxc="vi ~/.tmux.conf"
