@@ -164,6 +164,7 @@ alias py='python3'
 
 alias tel="cd ~/downloads"
 alias .ssh="cd ~/.ssh"
+alias lssh="ls ~/.ssh"
 
 alias .="cd .."
 alias .2="cd ../../"
