@@ -127,6 +127,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 PROMPT="%F{red}%M%F{bleu}@%~$(git_super_status)%#"
 
+
+alias rel="source ~/.zshrc"
+
 alias tfl="terraform login"
 alias tft="terraform taint"
 alias tfa="terraform apply -auto-approve"
@@ -361,7 +364,7 @@ alias padmin="pssh && paws && phist"
 
 
 
-alias bzsh="gback ~/My-zsh-conf"
+alias bzsh="gback ~/My-zsh-conf && rel"
 alias bvim="gback ~/My-VimRC"
 alias btmux="gback ~/My_tmux_conf"
 alias bhist="gback ~/My-zsh-history"
@@ -371,7 +374,9 @@ alias baws="gback ~/My-aws-cli"
 alias bac="gback ~/All-my-configs"
 
 
-alias ball="bac  && bgit && bzsh && bvim && btmux "
+alias ball=
+
+"bac  && bgit && bzsh && bvim && btmux "
 alias badmin="bhist && bssh && baws"
 
 
@@ -482,7 +487,6 @@ alias bi='brew install'
 alias grepr='gr'
 alias ls="ls -a"
 alias net="ping 8.8.8.8"
-alias rel="source ~/.zshrc"
 alias sshr="ssh-keygen -R"
 alias backup_mac="export MACPREFS_BACKUP_DIR=~/backup_mac_pref && sudo macprefs backup"
 alias vi="vim +startinsert"
