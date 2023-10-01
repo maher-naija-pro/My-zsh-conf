@@ -10,6 +10,8 @@ fi
 #change cusror form
 echo '\e[5 q'
 
+
+
 #creeast screnn to keep track context
 #screen -D -R -S main
 
