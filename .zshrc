@@ -364,7 +364,7 @@ alias padmin="pssh && paws && phist"
 
 
 
-alias bzsh="gback ~/My-zsh-conf && rel"
+alias bzsh="gback ~/My-zsh-conf"
 alias bvim="gback ~/My-VimRC"
 alias btmux="gback ~/My_tmux_conf"
 alias bhist="gback ~/My-zsh-history"
