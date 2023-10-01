@@ -471,6 +471,8 @@ alias allc="vi ~/All-my-configs/conf.sh"
 alias sshc="vi ~/.ssh/config"
 alias awsc="vi ~/.aws/credentials"
 alias tmuxc="vi ~/.tmux.conf"
+alias tc="vi ~/.tmux.conf"
+
 alias vic="vi ~/.vimrc"
 alias gitc="vi ~/.gitconfig"
 alias tzshc="vi ~/.p10k.zsh"
