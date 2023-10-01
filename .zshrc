@@ -25,8 +25,10 @@ SAVEHIST=500000000
 setopt HIST_IGNORE_ALL_DUPS EXTENDED_HISTORY APPEND_HISTORY
 
 ZSH_AUTOSUGGEST_CLEAR_WIDGETS+=(buffer-empty bracketed-paste accept-line push-line-or-edit)
-ZSH_AUTOSUGGEST_STRATEGY=(history completion)
+ZSH_AUTOSUGGEST_STRATEGY=(history completion )
 ZSH_AUTOSUGGEST_USE_ASYNC=true
+ZSH_AUTOSUGGEST_USE_CURSOR=true
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#ff00ff,bg=cyan,bold,underline" 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -152,7 +154,7 @@ alias hl="helm list --all-namespaces --all"
 alias hu="helm uninstall"
 alias civ="circleci config validate"
 
-alias ls="ls -la"
+alias l="ls -la --color=auto"
 alias diff='colordiff'
 
 alias hosts='sudo vi /etc/hosts'
@@ -563,6 +565,6 @@ unset __conda_setup
 
 
 # pullall conf 
-pall 
+#pall 
 echo "pull all git conf repo"
 
