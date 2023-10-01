@@ -132,7 +132,6 @@ PROMPT="%F{red}%M%F{bleu}@%~$(git_super_status)%#"
 
 
 alias rel="source ~/.zshrc"
-alias trel=""tmux source-file ~/.tmux.conf""
 
 alias tfl="terraform login"
 alias tft="terraform taint"
@@ -569,6 +568,6 @@ unset __conda_setup
 
 
 # pullall conf 
-#pall 
-echo "pull all git conf repo"
+pall 
+#echo "pull all git conf repo"
 
