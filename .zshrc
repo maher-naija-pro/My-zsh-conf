@@ -374,9 +374,7 @@ alias baws="gback ~/My-aws-cli"
 alias bac="gback ~/All-my-configs"
 
 
-alias ball=
-
-"bac  && bgit && bzsh && bvim && btmux "
+alias ball="bac  && bgit && bzsh && bvim && btmux "
 alias badmin="bhist && bssh && baws"
 
 
