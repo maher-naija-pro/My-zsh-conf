@@ -453,6 +453,8 @@ alias awsdata="sed -i  -e   's/^\([^#].*\)/#&/' ~/.aws/credentials &&  sed -i  -
 
 alias ci="vi .circleci/config.yml"
 alias vimrc="vi ~/.vimrc"
+alias vimc="vi ~/.vimrc"
+alias vic="vi ~/.vimrc"
 alias zsh="vi ~/.zshrc"
 alias snipc="cd ~/.vim/plugged/vim-snippets/UltiSnips/"
 alias bsnip="cd ~/.vim/plugged/vim-snippets/UltiSnips/"
