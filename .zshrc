@@ -328,8 +328,9 @@ ossldatecert() {
 }
 alias ossldate="ossldatecert"
 
+alias ossl="openssl"
 
-
+############################################""
 alias cs="osascript -e 'quit app \"Slack\"'"
 alias cm="osascript -e 'quit app \"Messenger\"'"
 alias cweb="osascript -e 'quit app \"Webex\"'"
