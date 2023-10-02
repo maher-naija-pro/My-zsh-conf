@@ -315,6 +315,16 @@ ovs() {
 alias gtpr="ghpr"
 alias vs="ovs"
 
+
+osslreadcert() {
+     
+    openssl x509 -text -noout -in $1        
+}
+alias osslrc="osslreadcert"
+
+
+
+
 alias cs="osascript -e 'quit app \"Slack\"'"
 alias cm="osascript -e 'quit app \"Messenger\"'"
 alias cweb="osascript -e 'quit app \"Webex\"'"
