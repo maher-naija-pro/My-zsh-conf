@@ -315,13 +315,18 @@ ovs() {
 alias gtpr="ghpr"
 alias vs="ovs"
 
-
+#openssl
 osslreadcert() {
      
     openssl x509 -text -noout -in $1        
 }
 alias osslrc="osslreadcert"
 
+ossldatecert() {
+
+     openssl x509 -text -noout -in $1 | sed -n 's/ *Not After : *//p'
+}
+alias ossldate="ossldatecert"
 
 
 
