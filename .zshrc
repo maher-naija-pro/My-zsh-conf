@@ -170,9 +170,10 @@ alias mkdir='mkdir -pv '
 alias pip='pip3'
 alias py='python3'
 
-alias tel="cd ~/downloads"
+alias tele="cd ~/downloads"
 alias .ssh="cd ~/.ssh"
 alias lssh="ls ~/.ssh"
+alias tel="telnet"
 
 alias .="cd .."
 alias .2="cd ../../"
