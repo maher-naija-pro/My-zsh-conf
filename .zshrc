@@ -349,7 +349,7 @@ alias gback='gitback'
 
 
 gitpull() {
-        git  -C $1 pull 
+        git  -C $1 pull & 
 }
 alias gpull='gitpull'
 
