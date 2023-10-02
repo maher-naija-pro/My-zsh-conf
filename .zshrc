@@ -315,6 +315,16 @@ ovs() {
 alias gtpr="ghpr"
 alias vs="ovs"
 
+
+osslreadcert() {
+     
+    openssl x509 -text -noout -in $1        
+}
+alias osslrc="osslreadcert"
+
+
+
+
 alias cs="osascript -e 'quit app \"Slack\"'"
 alias cm="osascript -e 'quit app \"Messenger\"'"
 alias cweb="osascript -e 'quit app \"Webex\"'"
@@ -502,6 +512,9 @@ rep() {
 
 alias repall='rep'
 
+
+# kuma install
+alias kuma_install="curl -L https://kuma.io/installer.sh | VERSION=2.4.0 sh -"
 #usage : sedall mah\*  s/leila/chems/g
 seda() {
  find . -name $1  | xargs  sed  -i "" $2
