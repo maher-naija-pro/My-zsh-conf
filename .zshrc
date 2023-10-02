@@ -502,6 +502,9 @@ rep() {
 
 alias repall='rep'
 
+
+# kuma install
+alias kuma_install="curl -L https://kuma.io/installer.sh | VERSION=2.4.0 sh -"
 #usage : sedall mah\*  s/leila/chems/g
 seda() {
  find . -name $1  | xargs  sed  -i "" $2
