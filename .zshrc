@@ -169,6 +169,8 @@ alias wget='wget -c '
 alias mkdir='mkdir -pv '
 alias pip='pip3'
 alias py='python3'
+alias ps='ps axwww'
+alias netstats='netstats -laputen'
 
 alias tele="cd ~/downloads"
 alias .ssh="cd ~/.ssh"
