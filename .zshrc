@@ -159,7 +159,7 @@ alias l="ls -la --color=auto"
 alias diff='colordiff'
 
 alias hosts='sudo vi /etc/hosts'
-alias netstat='netstat -tulanp'
+alias netstat='netstat -laputen'
 alias root='sudo -i'
 alias su='sudo -i'
 alias df='df -H'
@@ -171,7 +171,7 @@ alias pip='pip3'
 alias py='python3'
 alias ps='ps axuwww'
 alias netstats='netstat -laputen'
-alias netstat='netstat -laputen'
+alias ns='netstat -laputen'
 
 alias tele="cd ~/downloads"
 alias .ssh="cd ~/.ssh"
