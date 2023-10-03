@@ -172,6 +172,7 @@ alias py='python3'
 alias ps='ps axuwww'
 alias netstats='netstat -laputen'
 alias ns='netstat -laputen'
+alias kill='kill -9'
 
 alias tele="cd ~/downloads"
 alias .ssh="cd ~/.ssh"
