@@ -160,6 +160,7 @@ alias diff='colordiff'
 
 alias hosts='sudo vi /etc/hosts'
 alias netstat='netstat -laputen'
+alias nets='netstat -laputen'
 alias root='sudo -i'
 alias su='sudo -i'
 alias df='df -H'
@@ -513,7 +514,8 @@ alias gback='gitback'
 alias bi='brew install'
 alias grepr='gr'
 alias ls="ls -a"
-alias net="ping 8.8.8.8"
+alias ifc="ifconfig"
+alias pingg="ping 8.8.8.8"
 alias sshr="ssh-keygen -R"
 alias backup_mac="export MACPREFS_BACKUP_DIR=~/backup_mac_pref && sudo macprefs backup"
 alias vi="vim +startinsert"
