@@ -409,6 +409,7 @@ alias biterm="cd ~/backup_iterm_config && gback ~/backup_iterm_config"
 alias k="kubectl"
 alias e="exit"
 alias s="ssh"
+alias t="tmux"
 
 #kuberantes
 alias kdns="kubectl describe ns"
