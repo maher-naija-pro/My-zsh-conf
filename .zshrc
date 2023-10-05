@@ -472,6 +472,7 @@ alias appd="s3cmd  sync --delete-removed   --recursive  /Users/maher.naija/vpc-i
 alias aprd="s3cmd  sync --delete-removed   --recursive  /Users/maher.naija/vpc-it-2.0-ansible/*  s3://it-2-ansible-prd"
 alias clear="clear && reset"
 alias reset="clear && reset"
+alias r="clear && reset"
 alias res="clear && reset"
 alias clear="clear && reset"
 
