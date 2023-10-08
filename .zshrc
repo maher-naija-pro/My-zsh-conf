@@ -518,9 +518,8 @@ alias ifc="ifconfig"
 alias pingg="ping 8.8.8.8"
 alias sshr="ssh-keygen -R"
 alias backup_mac="export MACPREFS_BACKUP_DIR=~/backup_mac_pref && sudo macprefs backup"
-alias vi="vim +startinsert"
-alias v="vim +startinsert"
-
+alias vi="vim -cstartinsert"
+alias v="vim -cstartinsert"
 rep() {
     for i in $1* ; do sed -i '' -e   's/'$2'/'$3'/g' $i  && echo $i; done
 }
