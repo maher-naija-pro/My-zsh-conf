@@ -132,6 +132,7 @@ PROMPT="%F{red}%M%F{bleu}@%~$(git_super_status)%#"
 
 
 alias grm="go run ./main.go"
+alias gmi="go mod init"
 alias rel="source ~/.zshrc"
 
 alias tfl="terraform login"
