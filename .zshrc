@@ -131,6 +131,7 @@ source $ZSH/oh-my-zsh.sh
 PROMPT="%F{red}%M%F{bleu}@%~$(git_super_status)%#"
 
 
+alias grm="go run ./main.go"
 alias rel="source ~/.zshrc"
 
 alias tfl="terraform login"
