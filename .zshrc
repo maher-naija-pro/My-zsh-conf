@@ -131,8 +131,7 @@ source $ZSH/oh-my-zsh.sh
 PROMPT="%F{red}%M%F{bleu}@%~$(git_super_status)%#"
 
 
-alias air='~/go/bin/air'
-alias grm="go run ./main.go"
+alias gr="air"
 alias gmi="go mod init"
 alias rel="source ~/.zshrc"
 
