@@ -101,7 +101,7 @@ ENABLE_CORRECTION="false"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=( vi-mode history jsontools dirhistory web-search sudo history-substring-search git-prompt  zsh-autosuggestions zsh-syntax-highlighting)
+plugins=( last-working-dir vi-mode history jsontools dirhistory web-search sudo history-substring-search git-prompt  zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
