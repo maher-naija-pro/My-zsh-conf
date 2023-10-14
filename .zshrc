@@ -130,9 +130,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 PROMPT="%F{red}%M%F{bleu}@%~$(git_super_status)%#"
 
-
-alias gr="air"
 alias gmi="go mod init"
+alias gr="air"
 alias rel="source ~/.zshrc"
 
 alias tfl="terraform login"
@@ -509,13 +508,13 @@ alias monip="curl -s ifconfig.me"
 alias ouip="whois $(monip) | grep country"
 alias cpr="cp -r "
 alias diff="colordiff"
-gr() {
+grr() {
   grep -r  $1  .
 
 }
 alias gback='gitback'
 alias bi='brew install'
-alias grepr='gr'
+alias grepr='grr'
 alias ls="ls -a"
 alias ifc="ifconfig"
 alias pingg="ping 8.8.8.8"
