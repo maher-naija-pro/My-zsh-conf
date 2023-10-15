@@ -132,7 +132,9 @@ PROMPT="%F{red}%M%F{bleu}@%~$(git_super_status)%#"
 
 alias gmi="go mod init"
 alias gr="air"
+
 alias rel="source ~/.zshrc"
+alias goog="google"
 
 alias tfl="terraform login"
 alias tft="terraform taint"
