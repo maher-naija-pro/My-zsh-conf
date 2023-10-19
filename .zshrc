@@ -131,7 +131,7 @@ source $ZSH/oh-my-zsh.sh
 PROMPT="%F{red}%M%F{bleu}@%~$(git_super_status)%#"
 
 alias gmi="go mod init"
-alias web="cd ~/go_web"
+alias web="cd /mnt/d/go_web"
 alias gr="air"
 
 alias rel="source ~/.zshrc"
