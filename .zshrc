@@ -237,7 +237,7 @@ gitall() {
     then
         git commit -m "$1"
     else
-        git commit -m update
+        aicommit2
     fi
     git push
 }
@@ -604,3 +604,9 @@ unset __conda_setup
 pall 
 #echo "pull all git conf repo"
 
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/maher/google-cloud-sdk/path.zsh.inc' ]; then . '/home/maher/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/maher/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/maher/google-cloud-sdk/completion.zsh.inc'; fi
