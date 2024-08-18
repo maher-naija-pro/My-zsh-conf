@@ -237,7 +237,7 @@ gitall() {
     then
         git commit -m "$1"
     else
-        aicommit2
+        aicommit2 --generate 4
     fi
     git push
 }
