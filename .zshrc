@@ -241,15 +241,23 @@ gitall() {
     fi
     git push
 }
+ 
+gitallammend() {
+    git commit --amend --no-edit 
+    git push --force
+}
 
 alias gf='gitall'
+
+alias gfa='gitallammend'
+
 alias gk="gitk -all -reflog"
 alias gd='git diff'
 alias gba='git branch -v -a'
 alias gl="git log --reflog --color --all --graph -p"
-alias gaf="gaa && gf" 
+alias gaf="gaa && gf"
 
-## stash 
+## stash
 alias gs="git stash"
 alias gsp="git stash pop"
 
