@@ -1,3 +1,4 @@
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -11,13 +12,6 @@ fi
 echo '\e[5 q'
 
 
-
-#creeast screnn to keep track context
-#screen -D -R -S main
-
-if [ -z "$TMUX"  ]; then
-         tmux new-session -A -s workspace
-fi
 
 
 HISTSIZE=500000000
@@ -130,6 +124,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 PROMPT="%F{red}%M%F{bleu}@%~$(git_super_status)%#"
 
+alias vss="vi /mnt/c/Users/maher/AppData/Roaming/Cursor/User/settings.json" 
 alias gmi="go mod init"
 alias web="cd /mnt/d/go_web"
 alias gr="air"
@@ -233,12 +228,7 @@ gitint() {
 alias gi='gitint'
 
 gitall() {
-    if [ "$1" != "" ] # or better, if [ -n "$1" ]
-    then
-        git commit -m "$1"
-    else
-        aicommit2 --generate 4
-    fi
+    git commit -m "update"
     git push
 }
  
@@ -609,7 +599,7 @@ unset __conda_setup
 
 
 # pullall conf 
-pall 
+#pall 
 #echo "pull all git conf repo"
 
 
