@@ -124,6 +124,15 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 PROMPT="%F{red}%M%F{bleu}@%~$(git_super_status)%#"
 
+alias d="docker"   
+alias dcu="docker-compose up"   
+alias dcud="docker-compose up -d" 
+alias dcd="docker-compose down"
+alias dcl="docker logs"
+alias ds="docker stop "  
+
+alias gpt="codex"  
+
 alias gpt="codex"  
 alias vss="vi /mnt/c/Users/maher/AppData/Roaming/Cursor/User/settings.json" 
 alias gmi="go mod init"
