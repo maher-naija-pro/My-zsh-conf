@@ -125,6 +125,8 @@ source $ZSH/oh-my-zsh.sh
 PROMPT="%F{red}%M%F{bleu}@%~$(git_super_status)%#"
 
 alias d="docker"   
+alias dps="docker ps"   
+
 alias dcu="docker-compose up"   
 alias dcud="docker-compose up -d" 
 alias dcd="docker-compose down"
