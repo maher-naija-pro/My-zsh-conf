@@ -124,6 +124,10 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 PROMPT="%F{red}%M%F{bleu}@%~$(git_super_status)%#"
 
+
+alias d="docker" 
+alias cvenv="python3 -m venv venv" 
+alias venvactivate="source venv/bin/activate"
 alias d="docker"   
 alias dps="docker ps"   
 
