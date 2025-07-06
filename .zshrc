@@ -134,7 +134,7 @@ alias dps="docker ps"
 alias dcu="docker-compose up"   
 alias dcud="docker-compose up -d" 
 alias dcd="docker-compose down"
-alias dcl="docker logs"
+alias dl="docker logs"
 alias ds="docker stop "  
 
 alias gpt="codex"  
