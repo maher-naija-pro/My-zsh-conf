@@ -130,7 +130,7 @@ alias cvenv="python3 -m venv venv"
 alias venvactivate="source venv/bin/activate"
 alias d="docker"   
 alias dps="docker ps"   
-
+alias dr="dcd && dcud" 
 alias dcu="docker-compose up"   
 alias dcud="docker-compose up -d" 
 alias dcd="docker-compose down"
