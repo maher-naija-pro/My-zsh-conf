@@ -269,8 +269,9 @@ alias gsp="git stash pop"
 
 ## checkouts
 alias gc="git checkout"
-alias gcdev="git checkout dev"
+alias gcdev="git checkout integration"
 alias gcdata="git checkout data"
+alias gcint="git checkout integration"
 alias gcprod="git checkout prod"
 alias gchdev="git checkout dev"
 alias gchdata="git checkout data"
@@ -320,24 +321,6 @@ alias gcl="git clone"
 # dest branch
 # title
  
-alias oc="open /System/Applications/Calculator.app"
-alias om="open /Applications/Messenger.app"
-alias oweb="open /Applications/Webex.app"
-alias ol="open /Applications/Lens.app"
-alias os="open /Applications/Slack.app"
-alias opy="open /Applications/PyCharm\ CE.app"
-alias pre="open /System/Applications/System\ Preferences.app"
-alias on="open /System/Applications/Notes.app"
-alias opower="open /Applications/Microsoft\ PowerPoint.app"
-alias oword="open /Applications/Microsoft\ Word.app"
-alias oexel="open /Applications/Microsoft\ Excel.app"
-alias oaksk="open  ~/Downloads/aksk"
-alias odown="open  ~/Downloads"
-ovs() {
-        open -a /Applications/Visual\ Studio\ Code.app/ $1
-
-}
-alias gtpr="ghpr"
 alias vs="ovs"
 
 #openssl
@@ -356,18 +339,6 @@ alias ossldate="ossldatecert"
 alias ossl="openssl"
 
 ############################################""
-alias cs="osascript -e 'quit app \"Slack\"'"
-alias cm="osascript -e 'quit app \"Messenger\"'"
-alias cweb="osascript -e 'quit app \"Webex\"'"
-alias cl="osascript -e 'quit app \"Lens\"'"
-alias cc="osascript -e 'quit app \"Calculator\"'"
-alias cpy="osascript -e 'quit app \"Pycharm\"'"
-alias cpre="osascript -e 'quit app \"System Preferences\"'"
-alias cn="osascript -e 'quit app \"Notes\"'"
-alias cpower="osascript -e 'quit app \"Microsoft PowerPoint\"'"
-alias cword="osascript -e 'quit app \"Microsoft Word\"'"
-alias cexel="osascript -e 'quit app \"Microsoft Excel\"'"
-
 alias recipes="cd recipes"
 alias recipe="cd recipes"
 alias download='cd ~/Downloads'
@@ -378,14 +349,6 @@ alias data="awsdata && tfdata && cd  ~/aws-data/recipes"
 alias prd="awsprod && tfprod &&  cd  ~/aws-prod/recipes"
 alias prod="awsprod && tfprod && cd  ~/aws-prod/recipes"
 alias dev="awsdev && tfdev && cd  ~/aws-dev/recipes"
-
-gitback() {
-  git -C $1 add . 
-  git -C $1 commit -m upd 
-  git -C $1 push 
-
-}
-alias gback='gitback'
 
 
 
