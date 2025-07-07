@@ -256,7 +256,7 @@ gitallammend() {
 alias gf='gitall'
 
 alias gfa='gitallammend'
-
+alias gdelsrvbr='git push origin --delete'
 alias gk="gitk -all -reflog"
 alias gd='git diff'
 alias gba='git branch -v -a'
@@ -276,6 +276,7 @@ alias gcprod="git checkout prod"
 alias gchdev="git checkout dev"
 alias gchdata="git checkout data"
 alias gchprod="git checkout prod"
+alias gchint="git checkout integration"
 alias gdev="git checkout dev"
 alias gdata="git checkout data"
 alias gprod="git checkout prod"
@@ -285,6 +286,14 @@ alias gprod="git checkout prod"
      git merge $1 -m 'merge'
 }
 alias gm="gitm"
+
+#feature branch
+ gfea() {
+     gchint && git branch feature/maher/$1 && gch feature/maher/$1
+}
+alias gfe="gfea"
+
+
 alias gmdev="git merge dev"
 alias gmdata="git merge data"
 alias gmprod="git merge prod"
