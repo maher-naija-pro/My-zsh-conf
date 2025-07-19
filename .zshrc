@@ -267,6 +267,8 @@ alias gaf="gaa && gf"
 alias gs="git stash"
 alias gsp="git stash pop"
 
+
+alias gddb="git push origin --delete" 
 ## checkouts
 alias gc="git checkout"
 alias gcdev="git checkout integration"
