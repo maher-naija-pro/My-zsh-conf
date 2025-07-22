@@ -136,7 +136,7 @@ alias dcud="docker-compose up -d"
 alias dcd="docker-compose down"
 alias dl="docker logs"
 alias ds="docker stop "  
-
+alias maxdir="sudo du -h --max-depth=1 . | sort -hr | head -n 10"
 alias gpt="codex"  
 
 alias gpt="codex"  
@@ -269,6 +269,7 @@ alias gsp="git stash pop"
 
 
 alias gddb="git push origin --delete" 
+alias gdlb="git branch -d"
 ## checkouts
 alias gc="git checkout"
 alias gcdev="git checkout integration"
