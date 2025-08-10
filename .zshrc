@@ -128,6 +128,8 @@ PROMPT="%F{red}%M%F{bleu}@%~$(git_super_status)%#"
 alias d="docker" 
 alias cvenv="python3 -m venv venv" 
 alias createvenv="python3 -m venv venv" 
+alias venvc="python3 -m venv venv"
+alias venvcreate="python3 -m venv venv"
 
 alias venvactivate="source venv/bin/activate"
 alias p="python3"
